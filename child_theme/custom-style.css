@@ -1,0 +1,353 @@
+body {
+    background: url("images/bg.png") no-repeat scroll center top #D6D9D9; /* Cai dat hinh va mau nen cho trang */
+    color: #656565; /* Thiet lap mau mac dinh cho tat ca cac chu */
+    font-size: 13px; /* Thiet lap kich co chu */
+    line-height: 1.5; /* Thiet lap do cao cua mot dong */
+}
+ 
+a {
+        color: #018396; /* Thiet lap mau chu cho duong dan */
+        text-decoration: none; /* Mac dinh duong dan khong co gach chan */
+        transition: all 0.5s ease-in-out 0s; /* Hieu ung khi thay doi dinh dang cua duong dan */
+}
+ 
+a:hover {
+        text-decoration: underline; /* Khi dua chuot ngang qua duong dan thi xuat hien gach chan */
+}
+ 
+.wrapper, .page-width {
+    width: 1020px; /* Do rong cua trang la 1020px */
+}
+ .page-width {
+        margin: 0 auto;
+}
+header .logo {
+		padding-top: 60px;
+        margin: 10px 0; /* Logo se cach phia tren 10px va cach phia duoi 10px */
+}
+.nav {
+    background: none repeat scroll 0 0 #04A4CC; /* Thiet lap mau nen cho menu */
+    /* border-bottom: 3px solid #FF6600; /* Duong vien ben duoi menu voi kich thuoc 3px */
+    padding: 0; /* Khong cach ben trong */
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index : 9999;
+}
+.nav ul {
+    list-style: none outside none; /* Khong hien thi bullet phia truoc list */
+    margin: 0; /* Khong cach ben ngoai */
+    padding: 0; /* Khong cach ben trong */
+}
+ 
+.nav .menu li, .nav li {
+        display: inline-block; /* Hien thi tren cung mot hang */
+        vertical-align: top;
+        position: relative;
+}
+ 
+.nav .menu a, .nav li a {
+    color: #fff; /* Mau chu cua duong dan tren menu */
+    display: inline-block; /* Hien thi cung hang va nhay xuong hang khi het cho */
+    font-size: 13px;
+    font-weight: bold; /* Dinh dang kieu chu in dam */
+    padding: 20px;
+    text-transform: uppercase; /* Luon luon xuat chu IN HOA ra man hinh */
+}
+ 
+.nav .menu a:hover, .nav li a:hover {
+        text-decoration: none; /* Gach chan khi dua chuot ngang qua */
+		color: #ff0000;
+}
+ 
+.nav ul ul {
+    background-color: #CC3300;
+    display: none;
+    left: 0;
+    min-width: 180px;
+    position: absolute;
+    top: 100%;
+    z-index: 9999;
+}
+ 
+.nav li li {
+        display: block;
+}
+ 
+.nav li.menu-item-has-children:hover > ul {
+        display: block;
+}
+ 
+.nav li li:hover {
+        background-color: #B72D00;
+}
+ 
+.content {
+    background: url("images/content-bg.jpg") repeat-x scroll right bottom #FFFFFF;
+    border: 2px solid #FFFFFF;
+    margin-top: 10px;
+    overflow: hidden; /* Boc khung toan bo sidebar va main */
+    padding: 40px;
+}
+ 
+main section h1 {
+        display: block;
+}
+ 
+main {
+    float: left; /* Nam ben trai */
+    width: 70%; /* Do rong 70% cua khung */
+}
+ 
+.sidebar {
+    float: right; /* Nam ben phai */
+    width: 25%; /* Do rong 25% cua khung */
+}
+ 
+.content img {
+    border: 1px solid #CCCCCC;
+    padding: 2px;
+}
+ 
+article {
+    border-bottom: 1px dotted #E6E6E6; /* Tao duong vien ben duoi moi bai viet khi duyet danh sach */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+ 
+.pagination .page-numbers {
+    font-size: 25px;
+    margin-right: 10px;
+}
+/* ==========================
+        CSS cho box tac gia
+   ========================== */
+ 
+.author-wrap {
+    background: none repeat scroll 0 0 #E8E8E8;
+    border: 1px solid #C6C6C6;
+    display: block;
+    margin: 10px 0 30px;
+    overflow: hidden;
+    padding: 10px;
+}
+.author-gravatar {
+    border-radius: 50px;
+    float: left;
+    height: 60px;
+    line-height: 1;
+    margin: 0 25px 0 0;
+    width: 60px;
+}
+.author-gravatar img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    height: 60px;
+    padding: 2px;
+    width: 60px;
+}
+.author-info {
+    float: left;
+    width: 86%;
+}
+.author-title {
+    color: #555555;
+    display: block;
+    font-family: Raleway,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 0 0 10px;
+}
+.author-title a {
+    color: #454545;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+.author-description {
+    display: block;
+}
+.author-description p {
+    margin: 0;
+}
+.author-wrap ul {
+    list-style: none outside none;
+    margin: 8px 0 0;
+    overflow: hidden;
+    padding: 0;
+}
+.author-wrap ul li {
+    border-left: 1px solid #DFD5B5;
+    display: inline-block;
+    margin: 0;
+    padding: 0 5px 0 7px;
+}
+.author-wrap ul li:first-child {
+    border: medium none;
+    padding: 0 0 0 1px;
+}
+.author-wrap ul li a {
+    color: #4183C4;
+    font-size: 16px;
+}
+.author-wrap ul li a:hover {
+    color: #1B93DF;
+    text-decoration: none;
+}
+.comments h2 {
+    border-bottom: 1px solid #DFDFDF;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.comments ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.comments ul ul {
+    border-top: 1px solid #DFDFDF;
+    margin-left: 0;
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.comments li {
+    border-bottom: 1px solid #DFDFDF;
+    margin-bottom: 10px;
+}
+.comments li:last-child {
+        border: medium none;
+}
+.comments img.avatar {
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    float: right;
+    margin-left: 10px;
+    padding: 2px;
+}
+.comments .fn a, .comments .fn {
+    font-size: 25px;
+    font-style: normal;
+}
+.comments .comment-meta a {
+    color: #999999;
+    font-style: italic;
+}
+.comment-form label {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.comment-form input, .comment-form textarea {
+    clear: both;
+    display: block;
+    float: left;
+}
+.comments .form-allowed-tags {
+    clear: both;
+}
+.comments p {
+    overflow: hidden;
+}
+.comment-respond {
+    border-top: 1px solid #DFDFDF;
+    margin-top: 20px;
+}
+ 
+.comments .required, .comments .comment-form-comment label {
+        display: none;
+}
+/* ============================
+ *      Dinh dang CSS cho sidebar
+ * ============================ */
+ 
+.search input[type="search"] {
+    background: none repeat scroll 0 0 #F3F3F3;
+    border: 1px solid #E3E3E3;
+    padding: 5px;
+    width: 95%;
+}
+.search .search-submit {
+        display: none;
+}
+.sidebar-widget ul {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+.sidebar-widget > div {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-color: #C4C4C4 #E8E8E8 #E8E8E8;
+    border-style: solid;
+    border-width: 4px 1px 1px;
+    margin-bottom: 8px;
+}
+ 
+.sidebar-widget > div:first-child {
+    margin-top: 8px;
+}
+.sidebar-widget > div h3 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #CFCFCF;
+    color: #444444;
+    margin: 0;
+    padding: 5px;
+}
+input.button {
+    padding: 2px 10px;
+}
+ 
+hr {
+    background: url("img/dotted-line.png") repeat scroll center top / 4px 4px rgba(0, 0, 0, 0);
+    border: 0 none;
+    height: 1px;
+    margin: 0 0 24px;
+}
+ 
+input.file, input[type=text], textarea, input[type=password] {
+    border: 2px solid #D4D0BA;
+    font-family: inherit;
+    padding: 5px;
+}
+ 
+select {
+    padding: 3px 2px;
+}
+table {
+    border-bottom: 1px solid #EDEDED;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    line-height: 2;
+    margin: 0 0 20px;
+    width: 100%;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+td {
+    border-top: 1px solid #EDEDED;
+    padding: 6px 10px 6px 0;
+}
+pre {
+    background: none repeat scroll 0 0 #F5F5F5;
+    color: #666666;
+    font-family: monospace;
+    font-size: 14px;
+    margin: 20px 0;
+    overflow: auto;
+    padding: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+blockquote {
+    font-size: 17px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 24px 40px;
+}
